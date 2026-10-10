@@ -27,6 +27,7 @@ import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.Lock
 import androidx.compose.material.icons.filled.Notifications
 import androidx.compose.material.icons.filled.Person
+import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.CircularProgressIndicator
@@ -38,9 +39,13 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Switch
 import androidx.compose.material3.SwitchDefaults
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -66,6 +71,42 @@ fun ProfileScreen(
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
     val context = LocalContext.current
+    var showLanguageDialog by remember { mutableStateOf(false) }
+
+    if (showLanguageDialog) {
+        val languages = listOf("English", "Spanish", "French", "German", "Hindi", "Japanese", "Portuguese", "Italian")
+        AlertDialog(
+            onDismissRequest = { showLanguageDialog = false },
+            title = { Text("Select Language") },
+            text = {
+                Column {
+                    languages.forEach { lang ->
+                        Row(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .clickable {
+                                    viewModel.setLanguage(lang)
+                                    showLanguageDialog = false
+                                }
+                                .padding(vertical = 12.dp),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            Text(
+                                text = lang,
+                                style = MaterialTheme.typography.bodyLarge,
+                                color = if (uiState.language == lang) TealAccent else MaterialTheme.colorScheme.onSurface
+                            )
+                        }
+                    }
+                }
+            },
+            confirmButton = {
+                TextButton(onClick = { showLanguageDialog = false }) {
+                    Text("Cancel", color = TealAccent)
+                }
+            }
+        )
+    }
 
     LaunchedEffect(authApprovedFlow) {
         authApprovedFlow?.collect {
@@ -212,7 +253,7 @@ fun ProfileScreen(
                 icon = Icons.Default.Info,
                 title = "Language",
                 value = uiState.language,
-                onClick = { }
+                onClick = { showLanguageDialog = true }
             )
 
             Spacer(Modifier.height(28.dp))
