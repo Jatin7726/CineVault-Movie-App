@@ -5,13 +5,20 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
+import com.cinevault.app.domain.repository.AccountRepository
 import com.cinevault.app.presentation.navigation.CineVaultNavGraph
 import com.cinevault.app.presentation.theme.CineVaultTheme
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.MutableSharedFlow
+import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
+
+    @Inject
+    lateinit var accountRepository: AccountRepository
 
     private val authApprovedFlow = MutableSharedFlow<Unit>(extraBufferCapacity = 1)
 
@@ -22,7 +29,8 @@ class MainActivity : ComponentActivity() {
         handleDeepLinkIntent(intent)
 
         setContent {
-            CineVaultTheme {
+            val darkMode by accountRepository.darkModeEnabled.collectAsState(initial = true)
+            CineVaultTheme(darkTheme = darkMode) {
                 CineVaultNavGraph(authApprovedFlow = authApprovedFlow)
             }
         }

@@ -41,6 +41,7 @@ import com.cinevault.app.presentation.search.SearchViewModel;
 import com.cinevault.app.presentation.search.SearchViewModel_HiltModules;
 import com.cinevault.app.presentation.watchlist.WatchlistViewModel;
 import com.cinevault.app.presentation.watchlist.WatchlistViewModel_HiltModules;
+import com.google.errorprone.annotations.CanIgnoreReturnValue;
 import dagger.hilt.android.ActivityRetainedLifecycle;
 import dagger.hilt.android.ViewModelLifecycle;
 import dagger.hilt.android.internal.builders.ActivityComponentBuilder;
@@ -396,6 +397,7 @@ public final class DaggerCineVaultApp_HiltComponents_SingletonC {
 
     @Override
     public void injectMainActivity(MainActivity mainActivity) {
+      injectMainActivity2(mainActivity);
     }
 
     @Override
@@ -423,20 +425,23 @@ public final class DaggerCineVaultApp_HiltComponents_SingletonC {
       return new ViewCBuilder(singletonCImpl, activityRetainedCImpl, activityCImpl);
     }
 
+    @CanIgnoreReturnValue
+    private MainActivity injectMainActivity2(MainActivity instance) {
+      MainActivity_MembersInjector.injectAccountRepository(instance, singletonCImpl.accountRepositoryImplProvider.get());
+      return instance;
+    }
+
     @IdentifierNameString
     private static final class LazyClassKeyProvider {
-      static String com_cinevault_app_presentation_search_SearchViewModel = "com.cinevault.app.presentation.search.SearchViewModel";
-
       static String com_cinevault_app_presentation_home_HomeViewModel = "com.cinevault.app.presentation.home.HomeViewModel";
 
       static String com_cinevault_app_presentation_profile_ProfileViewModel = "com.cinevault.app.presentation.profile.ProfileViewModel";
 
       static String com_cinevault_app_presentation_watchlist_WatchlistViewModel = "com.cinevault.app.presentation.watchlist.WatchlistViewModel";
 
-      static String com_cinevault_app_presentation_detail_DetailViewModel = "com.cinevault.app.presentation.detail.DetailViewModel";
+      static String com_cinevault_app_presentation_search_SearchViewModel = "com.cinevault.app.presentation.search.SearchViewModel";
 
-      @KeepFieldType
-      SearchViewModel com_cinevault_app_presentation_search_SearchViewModel2;
+      static String com_cinevault_app_presentation_detail_DetailViewModel = "com.cinevault.app.presentation.detail.DetailViewModel";
 
       @KeepFieldType
       HomeViewModel com_cinevault_app_presentation_home_HomeViewModel2;
@@ -446,6 +451,9 @@ public final class DaggerCineVaultApp_HiltComponents_SingletonC {
 
       @KeepFieldType
       WatchlistViewModel com_cinevault_app_presentation_watchlist_WatchlistViewModel2;
+
+      @KeepFieldType
+      SearchViewModel com_cinevault_app_presentation_search_SearchViewModel2;
 
       @KeepFieldType
       DetailViewModel com_cinevault_app_presentation_detail_DetailViewModel2;
@@ -527,30 +535,30 @@ public final class DaggerCineVaultApp_HiltComponents_SingletonC {
 
     @IdentifierNameString
     private static final class LazyClassKeyProvider {
-      static String com_cinevault_app_presentation_profile_ProfileViewModel = "com.cinevault.app.presentation.profile.ProfileViewModel";
-
       static String com_cinevault_app_presentation_search_SearchViewModel = "com.cinevault.app.presentation.search.SearchViewModel";
+
+      static String com_cinevault_app_presentation_home_HomeViewModel = "com.cinevault.app.presentation.home.HomeViewModel";
+
+      static String com_cinevault_app_presentation_profile_ProfileViewModel = "com.cinevault.app.presentation.profile.ProfileViewModel";
 
       static String com_cinevault_app_presentation_watchlist_WatchlistViewModel = "com.cinevault.app.presentation.watchlist.WatchlistViewModel";
 
       static String com_cinevault_app_presentation_detail_DetailViewModel = "com.cinevault.app.presentation.detail.DetailViewModel";
 
-      static String com_cinevault_app_presentation_home_HomeViewModel = "com.cinevault.app.presentation.home.HomeViewModel";
+      @KeepFieldType
+      SearchViewModel com_cinevault_app_presentation_search_SearchViewModel2;
+
+      @KeepFieldType
+      HomeViewModel com_cinevault_app_presentation_home_HomeViewModel2;
 
       @KeepFieldType
       ProfileViewModel com_cinevault_app_presentation_profile_ProfileViewModel2;
-
-      @KeepFieldType
-      SearchViewModel com_cinevault_app_presentation_search_SearchViewModel2;
 
       @KeepFieldType
       WatchlistViewModel com_cinevault_app_presentation_watchlist_WatchlistViewModel2;
 
       @KeepFieldType
       DetailViewModel com_cinevault_app_presentation_detail_DetailViewModel2;
-
-      @KeepFieldType
-      HomeViewModel com_cinevault_app_presentation_home_HomeViewModel2;
     }
 
     private static final class SwitchingProvider<T> implements Provider<T> {
@@ -681,17 +689,17 @@ public final class DaggerCineVaultApp_HiltComponents_SingletonC {
 
     private Provider<TmdbApi> provideTmdbApiProvider;
 
-    private Provider<CineVaultDatabase> provideDatabaseProvider;
-
-    private Provider<MovieDao> provideMovieDaoProvider;
-
     private Provider<DataStore<Preferences>> provideDataStoreProvider;
 
     private Provider<SessionManager> sessionManagerProvider;
 
-    private Provider<MovieRepositoryImpl> movieRepositoryImplProvider;
-
     private Provider<AccountRepositoryImpl> accountRepositoryImplProvider;
+
+    private Provider<CineVaultDatabase> provideDatabaseProvider;
+
+    private Provider<MovieDao> provideMovieDaoProvider;
+
+    private Provider<MovieRepositoryImpl> movieRepositoryImplProvider;
 
     private SingletonCImpl(ApplicationContextModule applicationContextModuleParam) {
       this.applicationContextModule = applicationContextModuleParam;
@@ -707,12 +715,12 @@ public final class DaggerCineVaultApp_HiltComponents_SingletonC {
       this.provideJsonProvider = DoubleCheck.provider(new SwitchingProvider<Json>(singletonCImpl, 6));
       this.provideRetrofitProvider = DoubleCheck.provider(new SwitchingProvider<Retrofit>(singletonCImpl, 2));
       this.provideTmdbApiProvider = DoubleCheck.provider(new SwitchingProvider<TmdbApi>(singletonCImpl, 1));
-      this.provideDatabaseProvider = DoubleCheck.provider(new SwitchingProvider<CineVaultDatabase>(singletonCImpl, 8));
-      this.provideMovieDaoProvider = DoubleCheck.provider(new SwitchingProvider<MovieDao>(singletonCImpl, 7));
-      this.provideDataStoreProvider = DoubleCheck.provider(new SwitchingProvider<DataStore<Preferences>>(singletonCImpl, 10));
-      this.sessionManagerProvider = DoubleCheck.provider(new SwitchingProvider<SessionManager>(singletonCImpl, 9));
-      this.movieRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<MovieRepositoryImpl>(singletonCImpl, 0));
-      this.accountRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<AccountRepositoryImpl>(singletonCImpl, 11));
+      this.provideDataStoreProvider = DoubleCheck.provider(new SwitchingProvider<DataStore<Preferences>>(singletonCImpl, 8));
+      this.sessionManagerProvider = DoubleCheck.provider(new SwitchingProvider<SessionManager>(singletonCImpl, 7));
+      this.accountRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<AccountRepositoryImpl>(singletonCImpl, 0));
+      this.provideDatabaseProvider = DoubleCheck.provider(new SwitchingProvider<CineVaultDatabase>(singletonCImpl, 11));
+      this.provideMovieDaoProvider = DoubleCheck.provider(new SwitchingProvider<MovieDao>(singletonCImpl, 10));
+      this.movieRepositoryImplProvider = DoubleCheck.provider(new SwitchingProvider<MovieRepositoryImpl>(singletonCImpl, 9));
     }
 
     @Override
@@ -748,8 +756,8 @@ public final class DaggerCineVaultApp_HiltComponents_SingletonC {
       @Override
       public T get() {
         switch (id) {
-          case 0: // com.cinevault.app.data.repository.MovieRepositoryImpl 
-          return (T) new MovieRepositoryImpl(singletonCImpl.provideTmdbApiProvider.get(), singletonCImpl.provideMovieDaoProvider.get(), singletonCImpl.sessionManagerProvider.get());
+          case 0: // com.cinevault.app.data.repository.AccountRepositoryImpl 
+          return (T) new AccountRepositoryImpl(singletonCImpl.provideTmdbApiProvider.get(), singletonCImpl.sessionManagerProvider.get());
 
           case 1: // com.cinevault.app.data.remote.TmdbApi 
           return (T) NetworkModule_ProvideTmdbApiFactory.provideTmdbApi(singletonCImpl.provideRetrofitProvider.get());
@@ -769,20 +777,20 @@ public final class DaggerCineVaultApp_HiltComponents_SingletonC {
           case 6: // kotlinx.serialization.json.Json 
           return (T) NetworkModule_ProvideJsonFactory.provideJson();
 
-          case 7: // com.cinevault.app.data.local.MovieDao 
-          return (T) DatabaseModule_ProvideMovieDaoFactory.provideMovieDao(singletonCImpl.provideDatabaseProvider.get());
-
-          case 8: // com.cinevault.app.data.local.CineVaultDatabase 
-          return (T) DatabaseModule_ProvideDatabaseFactory.provideDatabase(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule));
-
-          case 9: // com.cinevault.app.data.local.SessionManager 
+          case 7: // com.cinevault.app.data.local.SessionManager 
           return (T) new SessionManager(singletonCImpl.provideDataStoreProvider.get());
 
-          case 10: // androidx.datastore.core.DataStore<androidx.datastore.preferences.core.Preferences> 
+          case 8: // androidx.datastore.core.DataStore<androidx.datastore.preferences.core.Preferences> 
           return (T) DataStoreModule_ProvideDataStoreFactory.provideDataStore(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule));
 
-          case 11: // com.cinevault.app.data.repository.AccountRepositoryImpl 
-          return (T) new AccountRepositoryImpl(singletonCImpl.provideTmdbApiProvider.get(), singletonCImpl.sessionManagerProvider.get());
+          case 9: // com.cinevault.app.data.repository.MovieRepositoryImpl 
+          return (T) new MovieRepositoryImpl(singletonCImpl.provideTmdbApiProvider.get(), singletonCImpl.provideMovieDaoProvider.get(), singletonCImpl.sessionManagerProvider.get());
+
+          case 10: // com.cinevault.app.data.local.MovieDao 
+          return (T) DatabaseModule_ProvideMovieDaoFactory.provideMovieDao(singletonCImpl.provideDatabaseProvider.get());
+
+          case 11: // com.cinevault.app.data.local.CineVaultDatabase 
+          return (T) DatabaseModule_ProvideDatabaseFactory.provideDatabase(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule));
 
           default: throw new AssertionError(id);
         }
