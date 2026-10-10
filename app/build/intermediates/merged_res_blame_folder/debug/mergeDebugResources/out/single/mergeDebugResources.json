@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "com.cinevault.app-debug-82:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.cinevault.app-main-84:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.cinevault.app-debug-82:/mipmap_ic_launcher.xml.flat",
+        "source": "com.cinevault.app-main-84:/mipmap/ic_launcher.xml"
+    },
+    {
+        "merged": "com.cinevault.app-debug-82:/drawable_ic_launcher.xml.flat",
+        "source": "com.cinevault.app-main-84:/drawable/ic_launcher.xml"
+    },
+    {
+        "merged": "com.cinevault.app-debug-82:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.cinevault.app-main-84:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.cinevault.app-debug-82:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.cinevault.app-main-84:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.cinevault.app-debug-82:/drawable_ic_launcher_round.xml.flat",
+        "source": "com.cinevault.app-main-84:/drawable/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.cinevault.app-debug-82:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.cinevault.app-main-84:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    }
+]

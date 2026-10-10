@@ -1,0 +1,247 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.cinevault.app"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\android kotlin project\Cinevault\CineVault\CineVault\app\src\main\AndroidManifest.xml:4:5-67
+11-->D:\android kotlin project\Cinevault\CineVault\CineVault\app\src\main\AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+12-->D:\android kotlin project\Cinevault\CineVault\CineVault\app\src\main\AndroidManifest.xml:5:5-77
+12-->D:\android kotlin project\Cinevault\CineVault\CineVault\app\src\main\AndroidManifest.xml:5:22-74
+13
+14    <queries>
+14-->[com.github.chuckerteam.chucker:library:4.0.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\c775e6f8a80e97318dce73e93c7e8697\workspace\transformed\library-4.0.0\AndroidManifest.xml:7:5-13:15
+15        <intent>
+15-->[com.github.chuckerteam.chucker:library:4.0.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\c775e6f8a80e97318dce73e93c7e8697\workspace\transformed\library-4.0.0\AndroidManifest.xml:8:9-12:18
+16            <action android:name="android.intent.action.CREATE_DOCUMENT" />
+16-->[com.github.chuckerteam.chucker:library:4.0.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\c775e6f8a80e97318dce73e93c7e8697\workspace\transformed\library-4.0.0\AndroidManifest.xml:9:13-76
+16-->[com.github.chuckerteam.chucker:library:4.0.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\c775e6f8a80e97318dce73e93c7e8697\workspace\transformed\library-4.0.0\AndroidManifest.xml:9:21-73
+17
+18            <data android:mimeType="*/*" />
+18-->D:\android kotlin project\Cinevault\CineVault\CineVault\app\src\main\AndroidManifest.xml:29:17-31:47
+19        </intent>
+20    </queries>
+21
+22    <uses-permission
+22-->[com.github.chuckerteam.chucker:library:4.0.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\c775e6f8a80e97318dce73e93c7e8697\workspace\transformed\library-4.0.0\AndroidManifest.xml:15:5-17:38
+23        android:name="android.permission.WAKE_LOCK"
+23-->[com.github.chuckerteam.chucker:library:4.0.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\c775e6f8a80e97318dce73e93c7e8697\workspace\transformed\library-4.0.0\AndroidManifest.xml:16:9-52
+24        android:maxSdkVersion="25" />
+24-->[com.github.chuckerteam.chucker:library:4.0.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\c775e6f8a80e97318dce73e93c7e8697\workspace\transformed\library-4.0.0\AndroidManifest.xml:17:9-35
+25
+26    <permission
+26-->[androidx.core:core:1.13.1] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\e25c4e09cb54601337455d00cca3016f\workspace\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+27        android:name="com.cinevault.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+27-->[androidx.core:core:1.13.1] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\e25c4e09cb54601337455d00cca3016f\workspace\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+28        android:protectionLevel="signature" />
+28-->[androidx.core:core:1.13.1] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\e25c4e09cb54601337455d00cca3016f\workspace\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+29
+30    <uses-permission android:name="com.cinevault.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+30-->[androidx.core:core:1.13.1] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\e25c4e09cb54601337455d00cca3016f\workspace\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+30-->[androidx.core:core:1.13.1] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\e25c4e09cb54601337455d00cca3016f\workspace\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+31
+32    <application
+32-->D:\android kotlin project\Cinevault\CineVault\CineVault\app\src\main\AndroidManifest.xml:7:5-35:19
+33        android:name="com.cinevault.app.CineVaultApp"
+33-->D:\android kotlin project\Cinevault\CineVault\CineVault\app\src\main\AndroidManifest.xml:8:9-37
+34        android:allowBackup="true"
+34-->D:\android kotlin project\Cinevault\CineVault\CineVault\app\src\main\AndroidManifest.xml:9:9-35
+35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+35-->[androidx.core:core:1.13.1] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\e25c4e09cb54601337455d00cca3016f\workspace\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+36        android:debuggable="true"
+37        android:extractNativeLibs="false"
+38        android:icon="@mipmap/ic_launcher"
+38-->D:\android kotlin project\Cinevault\CineVault\CineVault\app\src\main\AndroidManifest.xml:10:9-43
+39        android:label="@string/app_name"
+39-->D:\android kotlin project\Cinevault\CineVault\CineVault\app\src\main\AndroidManifest.xml:12:9-41
+40        android:roundIcon="@mipmap/ic_launcher_round"
+40-->D:\android kotlin project\Cinevault\CineVault\CineVault\app\src\main\AndroidManifest.xml:11:9-54
+41        android:testOnly="true"
+42        android:theme="@style/Theme.CineVault" >
+42-->D:\android kotlin project\Cinevault\CineVault\CineVault\app\src\main\AndroidManifest.xml:13:9-47
+43        <activity
+43-->D:\android kotlin project\Cinevault\CineVault\CineVault\app\src\main\AndroidManifest.xml:15:9-33:20
+44            android:name="com.cinevault.app.MainActivity"
+44-->D:\android kotlin project\Cinevault\CineVault\CineVault\app\src\main\AndroidManifest.xml:16:13-41
+45            android:exported="true"
+45-->D:\android kotlin project\Cinevault\CineVault\CineVault\app\src\main\AndroidManifest.xml:18:13-36
+46            android:launchMode="singleTop"
+46-->D:\android kotlin project\Cinevault\CineVault\CineVault\app\src\main\AndroidManifest.xml:17:13-43
+47            android:theme="@style/Theme.CineVault" >
+47-->D:\android kotlin project\Cinevault\CineVault\CineVault\app\src\main\AndroidManifest.xml:19:13-51
+48            <intent-filter>
+48-->D:\android kotlin project\Cinevault\CineVault\CineVault\app\src\main\AndroidManifest.xml:20:13-23:29
+49                <action android:name="android.intent.action.MAIN" />
+49-->D:\android kotlin project\Cinevault\CineVault\CineVault\app\src\main\AndroidManifest.xml:21:17-69
+49-->D:\android kotlin project\Cinevault\CineVault\CineVault\app\src\main\AndroidManifest.xml:21:25-66
+50
+51                <category android:name="android.intent.category.LAUNCHER" />
+51-->D:\android kotlin project\Cinevault\CineVault\CineVault\app\src\main\AndroidManifest.xml:22:17-77
+51-->D:\android kotlin project\Cinevault\CineVault\CineVault\app\src\main\AndroidManifest.xml:22:27-74
+52            </intent-filter>
+53            <intent-filter>
+53-->D:\android kotlin project\Cinevault\CineVault\CineVault\app\src\main\AndroidManifest.xml:25:13-32:29
+54                <action android:name="android.intent.action.VIEW" />
+54-->D:\android kotlin project\Cinevault\CineVault\CineVault\app\src\main\AndroidManifest.xml:26:17-69
+54-->D:\android kotlin project\Cinevault\CineVault\CineVault\app\src\main\AndroidManifest.xml:26:25-66
+55
+56                <category android:name="android.intent.category.DEFAULT" />
+56-->D:\android kotlin project\Cinevault\CineVault\CineVault\app\src\main\AndroidManifest.xml:27:17-76
+56-->D:\android kotlin project\Cinevault\CineVault\CineVault\app\src\main\AndroidManifest.xml:27:27-73
+57                <category android:name="android.intent.category.BROWSABLE" />
+57-->D:\android kotlin project\Cinevault\CineVault\CineVault\app\src\main\AndroidManifest.xml:28:17-78
+57-->D:\android kotlin project\Cinevault\CineVault\CineVault\app\src\main\AndroidManifest.xml:28:27-75
+58
+59                <data
+59-->D:\android kotlin project\Cinevault\CineVault\CineVault\app\src\main\AndroidManifest.xml:29:17-31:47
+60                    android:host="approved"
+60-->D:\android kotlin project\Cinevault\CineVault\CineVault\app\src\main\AndroidManifest.xml:31:21-44
+61                    android:scheme="cinevault" />
+61-->D:\android kotlin project\Cinevault\CineVault\CineVault\app\src\main\AndroidManifest.xml:30:21-47
+62            </intent-filter>
+63        </activity>
+64        <activity
+64-->[com.github.chuckerteam.chucker:library:4.0.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\c775e6f8a80e97318dce73e93c7e8697\workspace\transformed\library-4.0.0\AndroidManifest.xml:21:9-26:52
+65            android:name="com.chuckerteam.chucker.internal.ui.MainActivity"
+65-->[com.github.chuckerteam.chucker:library:4.0.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\c775e6f8a80e97318dce73e93c7e8697\workspace\transformed\library-4.0.0\AndroidManifest.xml:22:13-76
+66            android:label="@string/chucker_name"
+66-->[com.github.chuckerteam.chucker:library:4.0.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\c775e6f8a80e97318dce73e93c7e8697\workspace\transformed\library-4.0.0\AndroidManifest.xml:23:13-49
+67            android:launchMode="singleTask"
+67-->[com.github.chuckerteam.chucker:library:4.0.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\c775e6f8a80e97318dce73e93c7e8697\workspace\transformed\library-4.0.0\AndroidManifest.xml:24:13-44
+68            android:taskAffinity="com.chuckerteam.chucker.task"
+68-->[com.github.chuckerteam.chucker:library:4.0.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\c775e6f8a80e97318dce73e93c7e8697\workspace\transformed\library-4.0.0\AndroidManifest.xml:25:13-64
+69            android:theme="@style/Chucker.Theme" />
+69-->[com.github.chuckerteam.chucker:library:4.0.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\c775e6f8a80e97318dce73e93c7e8697\workspace\transformed\library-4.0.0\AndroidManifest.xml:26:13-49
+70        <activity
+70-->[com.github.chuckerteam.chucker:library:4.0.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\c775e6f8a80e97318dce73e93c7e8697\workspace\transformed\library-4.0.0\AndroidManifest.xml:27:9-30:52
+71            android:name="com.chuckerteam.chucker.internal.ui.transaction.TransactionActivity"
+71-->[com.github.chuckerteam.chucker:library:4.0.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\c775e6f8a80e97318dce73e93c7e8697\workspace\transformed\library-4.0.0\AndroidManifest.xml:28:13-95
+72            android:parentActivityName="com.chuckerteam.chucker.internal.ui.MainActivity"
+72-->[com.github.chuckerteam.chucker:library:4.0.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\c775e6f8a80e97318dce73e93c7e8697\workspace\transformed\library-4.0.0\AndroidManifest.xml:29:13-90
+73            android:theme="@style/Chucker.Theme" />
+73-->[com.github.chuckerteam.chucker:library:4.0.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\c775e6f8a80e97318dce73e93c7e8697\workspace\transformed\library-4.0.0\AndroidManifest.xml:30:13-49
+74
+75        <service
+75-->[com.github.chuckerteam.chucker:library:4.0.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\c775e6f8a80e97318dce73e93c7e8697\workspace\transformed\library-4.0.0\AndroidManifest.xml:32:9-35:72
+76            android:name="com.chuckerteam.chucker.internal.support.ClearDatabaseService"
+76-->[com.github.chuckerteam.chucker:library:4.0.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\c775e6f8a80e97318dce73e93c7e8697\workspace\transformed\library-4.0.0\AndroidManifest.xml:33:13-89
+77            android:exported="false"
+77-->[com.github.chuckerteam.chucker:library:4.0.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\c775e6f8a80e97318dce73e93c7e8697\workspace\transformed\library-4.0.0\AndroidManifest.xml:34:13-37
+78            android:permission="android.permission.BIND_JOB_SERVICE" />
+78-->[com.github.chuckerteam.chucker:library:4.0.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\c775e6f8a80e97318dce73e93c7e8697\workspace\transformed\library-4.0.0\AndroidManifest.xml:35:13-69
+79
+80        <receiver
+80-->[com.github.chuckerteam.chucker:library:4.0.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\c775e6f8a80e97318dce73e93c7e8697\workspace\transformed\library-4.0.0\AndroidManifest.xml:37:9-39:40
+81            android:name="com.chuckerteam.chucker.internal.support.ClearDatabaseJobIntentServiceReceiver"
+81-->[com.github.chuckerteam.chucker:library:4.0.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\c775e6f8a80e97318dce73e93c7e8697\workspace\transformed\library-4.0.0\AndroidManifest.xml:38:13-106
+82            android:exported="false" />
+82-->[com.github.chuckerteam.chucker:library:4.0.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\c775e6f8a80e97318dce73e93c7e8697\workspace\transformed\library-4.0.0\AndroidManifest.xml:39:13-37
+83
+84        <provider
+84-->[com.github.chuckerteam.chucker:library:4.0.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\c775e6f8a80e97318dce73e93c7e8697\workspace\transformed\library-4.0.0\AndroidManifest.xml:41:9-49:20
+85            android:name="com.chuckerteam.chucker.internal.support.ChuckerFileProvider"
+85-->[com.github.chuckerteam.chucker:library:4.0.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\c775e6f8a80e97318dce73e93c7e8697\workspace\transformed\library-4.0.0\AndroidManifest.xml:42:13-88
+86            android:authorities="com.cinevault.app.com.chuckerteam.chucker.provider"
+86-->[com.github.chuckerteam.chucker:library:4.0.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\c775e6f8a80e97318dce73e93c7e8697\workspace\transformed\library-4.0.0\AndroidManifest.xml:43:13-84
+87            android:exported="false"
+87-->[com.github.chuckerteam.chucker:library:4.0.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\c775e6f8a80e97318dce73e93c7e8697\workspace\transformed\library-4.0.0\AndroidManifest.xml:44:13-37
+88            android:grantUriPermissions="true" >
+88-->[com.github.chuckerteam.chucker:library:4.0.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\c775e6f8a80e97318dce73e93c7e8697\workspace\transformed\library-4.0.0\AndroidManifest.xml:45:13-47
+89            <meta-data
+89-->[com.github.chuckerteam.chucker:library:4.0.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\c775e6f8a80e97318dce73e93c7e8697\workspace\transformed\library-4.0.0\AndroidManifest.xml:46:13-48:66
+90                android:name="android.support.FILE_PROVIDER_PATHS"
+90-->[com.github.chuckerteam.chucker:library:4.0.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\c775e6f8a80e97318dce73e93c7e8697\workspace\transformed\library-4.0.0\AndroidManifest.xml:47:17-67
+91                android:resource="@xml/chucker_provider_paths" />
+91-->[com.github.chuckerteam.chucker:library:4.0.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\c775e6f8a80e97318dce73e93c7e8697\workspace\transformed\library-4.0.0\AndroidManifest.xml:48:17-63
+92        </provider>
+93
+94        <service
+94-->[androidx.room:room-runtime:2.6.1] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\570715391629d227107882762c88ed96\workspace\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+95            android:name="androidx.room.MultiInstanceInvalidationService"
+95-->[androidx.room:room-runtime:2.6.1] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\570715391629d227107882762c88ed96\workspace\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+96            android:directBootAware="true"
+96-->[androidx.room:room-runtime:2.6.1] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\570715391629d227107882762c88ed96\workspace\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+97            android:exported="false" />
+97-->[androidx.room:room-runtime:2.6.1] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\570715391629d227107882762c88ed96\workspace\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+98
+99        <provider
+99-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\6469d8e0e9873166110f21c2efaafd67\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+100            android:name="androidx.startup.InitializationProvider"
+100-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\6469d8e0e9873166110f21c2efaafd67\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+101            android:authorities="com.cinevault.app.androidx-startup"
+101-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\6469d8e0e9873166110f21c2efaafd67\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+102            android:exported="false" >
+102-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\6469d8e0e9873166110f21c2efaafd67\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+103            <meta-data
+103-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\6469d8e0e9873166110f21c2efaafd67\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+104                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+104-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\6469d8e0e9873166110f21c2efaafd67\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+105                android:value="androidx.startup" />
+105-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\6469d8e0e9873166110f21c2efaafd67\workspace\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+106            <meta-data
+106-->[androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\567c57a7293fde53095b3ccf495b6f28\workspace\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:29:13-31:52
+107                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+107-->[androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\567c57a7293fde53095b3ccf495b6f28\workspace\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:30:17-78
+108                android:value="androidx.startup" />
+108-->[androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\567c57a7293fde53095b3ccf495b6f28\workspace\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:31:17-49
+109            <meta-data
+109-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\189642e1c576b3bb633e91056e818999\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+110                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+110-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\189642e1c576b3bb633e91056e818999\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+111                android:value="androidx.startup" />
+111-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\189642e1c576b3bb633e91056e818999\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+112        </provider>
+113
+114        <activity
+114-->[androidx.compose.ui:ui-tooling-android:1.6.8] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\d306c39363f54331e71f1533f96edd92\workspace\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+115            android:name="androidx.compose.ui.tooling.PreviewActivity"
+115-->[androidx.compose.ui:ui-tooling-android:1.6.8] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\d306c39363f54331e71f1533f96edd92\workspace\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+116            android:exported="true" />
+116-->[androidx.compose.ui:ui-tooling-android:1.6.8] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\d306c39363f54331e71f1533f96edd92\workspace\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+117
+118        <receiver
+118-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\189642e1c576b3bb633e91056e818999\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+119            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+119-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\189642e1c576b3bb633e91056e818999\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+120            android:directBootAware="false"
+120-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\189642e1c576b3bb633e91056e818999\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+121            android:enabled="true"
+121-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\189642e1c576b3bb633e91056e818999\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+122            android:exported="true"
+122-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\189642e1c576b3bb633e91056e818999\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+123            android:permission="android.permission.DUMP" >
+123-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\189642e1c576b3bb633e91056e818999\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+124            <intent-filter>
+124-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\189642e1c576b3bb633e91056e818999\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+125                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+125-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\189642e1c576b3bb633e91056e818999\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+125-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\189642e1c576b3bb633e91056e818999\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+126            </intent-filter>
+127            <intent-filter>
+127-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\189642e1c576b3bb633e91056e818999\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+128                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+128-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\189642e1c576b3bb633e91056e818999\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+128-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\189642e1c576b3bb633e91056e818999\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+129            </intent-filter>
+130            <intent-filter>
+130-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\189642e1c576b3bb633e91056e818999\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+131                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+131-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\189642e1c576b3bb633e91056e818999\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+131-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\189642e1c576b3bb633e91056e818999\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+132            </intent-filter>
+133            <intent-filter>
+133-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\189642e1c576b3bb633e91056e818999\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+134                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+134-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\189642e1c576b3bb633e91056e818999\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+134-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Jatin\.gradle\caches\9.3.0\transforms\189642e1c576b3bb633e91056e818999\workspace\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+135            </intent-filter>
+136        </receiver>
+137    </application>
+138
+139</manifest>
